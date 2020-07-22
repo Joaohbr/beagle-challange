@@ -1,1 +1,1 @@
-# beagle-challange
+# beagle-challenge
