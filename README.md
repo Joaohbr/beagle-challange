@@ -9,5 +9,6 @@ Run 'mvn clean install'
 
 and then 'java -jar target/beagle-challenge-1.0-SNAPSHOT.jar'
 
-You can also find the jar as a release in the repository
+You can also find the jar as a release at:
+https://github.com/Joaohbr/beagle-challenge/releases/tag/v1
 
