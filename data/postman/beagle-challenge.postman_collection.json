@@ -1,0 +1,93 @@
+{
+	"info": {
+		"_postman_id": "d6b3943b-9d33-483c-a699-3b09454863cd",
+		"name": "beagle-challenge",
+		"description": "A helper to test my project :)",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get all points",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/geoloc/",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"geoloc",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create new point",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"Nome2\",\r\n    \"xCoord\": -1,\r\n    \"yCoord\" : 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/geoloc",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"geoloc"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get near points",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/geoloc/near?xCoord=20&yCoord=10&maxD=10",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"geoloc",
+						"near"
+					],
+					"query": [
+						{
+							"key": "xCoord",
+							"value": "20"
+						},
+						{
+							"key": "yCoord",
+							"value": "10"
+						},
+						{
+							"key": "maxD",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
